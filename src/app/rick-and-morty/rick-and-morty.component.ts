@@ -29,11 +29,15 @@ export class RickAndMortyComponent implements OnInit {
     this.rockandMorty$.subscribe(() => {
       this.loading = false;
     });
+
+    // TODO: comment out for non rxjs way
     // setTimeout(() => {
     //   this.rockandMorty = data;
     //   this.loading = false;
     // }, 2000)
-    // data
+    // TODO:
+    // data - const
+    // this.rockandMorty = public property - that is available in template
     // this.rockandMorty.results[0].name
   }
 
